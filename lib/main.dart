@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodrecipe/widgets/Hero.dart';
 import 'package:foodrecipe/widgets/Review.dart';
+import 'package:foodrecipe/widgets/UserInfo.dart';
 import 'package:foodrecipe/widgets/appBar.dart';
 
 void main() {
@@ -45,12 +46,25 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               // Title
               const Text( "How to make french toast", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500) ),
+
               // Hero section with background image and play button
               const SizedBox(height: 15),
               const HeroSection(bgImg: "../assets/images/image_13.png"),
+
               // Review Section ncluding rating and review
               const SizedBox(height: 15),
               ReviewSection(ratingValue: 4.5),
+
+              // UserInfo Section including profile picture, name, location and follow button
+              const SizedBox(height: 15),
+              UserInfoSection(
+                image: "../assets/images/unsplash_img.png",
+                name: "Roberta Anny",
+                location: "Bali, Indonesia"
+              ),
+
+              //Ingredient Section
+              const SizedBox(height: 15),
             ]
 
           ),
