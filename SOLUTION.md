@@ -16,7 +16,7 @@
 
     - UserInfo.dart: This contains the user information such as a profile image, the users name and location icon with the location and finally a follow button.
 
-    -Ingredients: This contains two classes, one to define  the container for a single ingredient which has an ingredient image, name and weight of the ingredient.
+    - Ingredients: This contains two classes, one to define  the container for a single ingredient which has an ingredient image, name and weight of the ingredient.
     The second class lists out the entire ingredient section which includes a header with a title and the number of items followed by a list of ingredients.
 
 - All widgets were imported into the main.dart file and brought together to form the mobile app.
