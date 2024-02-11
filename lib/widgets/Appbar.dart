@@ -9,7 +9,7 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
       leading: const Icon(Icons.arrow_back),
       actions: const [
         Padding(
-          padding: EdgeInsets.only(right: 10.0),
+          padding: EdgeInsets.only(right: 12.0),
           child: Icon(Icons.more_horiz),
         ),
       ],
