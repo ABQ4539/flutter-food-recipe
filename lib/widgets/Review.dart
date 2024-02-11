@@ -20,12 +20,14 @@ class ReviewSection extends StatelessWidget {
           color: Colors.orange.shade400,
           size: 20,
         ),
+
         // Rating Value
-        const SizedBox( width: 5 ),
+        const SizedBox(width: 5),
         Text(
           "$ratingValue",
-          style: const TextStyle( fontWeight: FontWeight.bold ),
+          style: const TextStyle( fontSize: 14, fontWeight: FontWeight.bold ),
         ),
+
         // Reviews
         const SizedBox( width: 6 ),
         const Text(
@@ -33,11 +35,9 @@ class ReviewSection extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.w500,
             color: Colors.grey,
-            fontSize: 17,
+            fontSize: 14,
           ),
         ),
-
-        const SizedBox( width: 7 ),
       ],
 
     );

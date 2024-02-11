@@ -20,8 +20,8 @@ class UserInfoSection extends StatelessWidget {
       children: [
         Row(
           children: [
-            Image.asset(image, fit: BoxFit.cover),
-            const SizedBox(width: 10),
+            Image.asset(image, fit: BoxFit.contain),
+            const SizedBox(width: 7),
 
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -35,13 +35,13 @@ class UserInfoSection extends StatelessWidget {
                   children: [
                     Image.asset("../assets/images/Location.png"),
 
-                    const SizedBox(width: 5),
+                    const SizedBox(width: 3),
                     Text(
                       location,
                       style: const TextStyle(
                         fontWeight: FontWeight.w600,
                         color: Colors.grey,
-                        fontSize: 14,
+                        fontSize: 13,
                       ),
                     ),
                   ],
@@ -58,9 +58,9 @@ class UserInfoSection extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
             foregroundColor: Colors.white,
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(11)
+              borderRadius: BorderRadius.circular(9)
             ),
           ),
           child: const Text('Follow')
